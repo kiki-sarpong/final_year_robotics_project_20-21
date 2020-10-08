@@ -1,0 +1,298 @@
+<?xml version="1.0" ?>
+<robot name="my_cam" >
+
+    <!-- Specify material colors here -->
+    <material name="blue">
+        <color rgba="0 0 0.8 1"/>
+    </material>
+    <material name="red">
+        <color rgba="0.8 0 0 1"/>
+    </material>
+    <material name="grey">
+        <color rgba="0.75 0.75 0.75 1"/>
+    </material>
+
+    <!-- Gazebo plugin initialization -->
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/my_cam</robotNamespace> This robot name is the same as robot name at the top
+        </plugin>
+    </gazebo>
+   
+                <!-- ////////////////////////// === BASE LINKS ==== //////////////////////////////////// -->
+
+
+   <!-- Circular base link -->
+    <link name="base_link">
+        <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <cylinder radius="0.06" length="0.01"/>
+        </geometry>
+        <material name = "blue"/>
+        </visual>
+
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <cylinder radius="0.06" length="0.01"/>
+        </geometry>
+        </collision>
+    </link>
+
+    This is for color and physical properties in Gazebo, color won't work with the material tag in gazebo
+    only for URDF coloring
+    <gazebo reference="base_link">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <!-- Circular base link 2 -->
+     <link name="base_link_2">
+        <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <cylinder radius="0.06" length="0.01"/>
+        </geometry>
+        <material name = "blue"/>
+        </visual>
+
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <cylinder radius="0.06" length="0.01"/>
+        </geometry>
+        </collision>
+    </link>
+ 
+    <gazebo reference="base_link_2">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+
+     <!-- ////////////////////////// === CEILING LINK ==== //////////////////////////////////// -->
+
+
+    <!-- Ceiling link -->
+    <link name="ceiling_link">
+        <collision>
+        <origin xyz="0 0 -0.2" rpy="0 0 0"/>
+        <geometry>
+            <box size="12 7 0.2"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 -0.2" rpy="0 0 0"/> because the thickness is 0.2
+        <geometry>
+            <box size="12 7 0.2"/>
+        </geometry>
+        <material name="grey"/>
+        </visual>
+
+        <inertial>
+        <mass value="50" /> 
+        <origin xyz="0 0 -0.2" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="150.16666666666669" ixy="0" ixz="0" iyy="337.66666666666674" iyz="0" izz="487.50000000000006" />
+        </inertial>
+    </link>
+    <gazebo reference="ceiling_link">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/DarkGrey</material>
+    </gazebo>
+
+
+
+        <!-- ////////////////////////// === CAMERA LINKS ==== //////////////////////////////////// -->
+
+
+    <!-- Camera Link 1-->
+    <link name="camera_link_1">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="0.07 0.07 0.07"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="0.07 0.07 0.07"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="0.25" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="0.00020416666666666668" ixy="0" ixz="0" iyy="0.00020416666666666668" iyz="0" izz="0.00020416666666666668" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_1">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <!-- Camera Link 2-->
+    <link name="camera_link_2">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="0.07 0.07 0.07"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="0.07 0.07 0.07"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="0.25" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="0.00020416666666666668" ixy="0" ixz="0" iyy="0.00020416666666666668" iyz="0" izz="0.00020416666666666668" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_2">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+
+
+
+
+            <!-- ////////////////////////// === Joints ==== //////////////////////////////////// -->
+
+
+
+    <!-- joint = base_link to camera_link -->       camera 1
+    <joint name="camera_joint_1" type="fixed">
+        <origin xyz="0 0 0.04" rpy="0 0 0"/> Z = 0.04 gave the best joint look
+        <parent link="base_link"/>
+        <child link="camera_link_1"/>
+    </joint>
+
+
+    <!-- joint = base_link to ceiling_link -->        camera 1
+    <joint name="ceiling_cam1_joint" type="fixed">
+        <origin xyz="-3.5 0 0" rpy="0 0 0"/> "-2" to move the opposite side of the ceiling
+        <parent link="ceiling_link"/>
+        <child link="base_link"/>
+    </joint>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- joint = base_link to camera_link -->       camera 2
+    <joint name="camera_joint_2" type="fixed">
+        <origin xyz="0 0 0.04" rpy="0 0 0"/> Z = 0.04 gave the best joint look
+        <parent link="base_link_2"/>
+        <child link="camera_link_2"/>
+    </joint>
+
+
+    <!-- joint = base_link to ceiling_link -->        camera 2
+    <joint name="ceiling_cam2_joint" type="fixed">
+        <origin xyz="3.5 0 0" rpy="0 0 0"/> "2" to move the opposite side of the ceiling
+        <parent link="ceiling_link"/>
+        <child link="base_link_2"/>
+    </joint>
+
+
+
+
+    <!-- Gazebo Camera plugin 1-->
+    <gazebo reference="camera_link_1">
+        <sensor type="camera" name="camera1">
+            <update_rate>30.0</update_rate>
+            <camera name="head">
+            <pose>0 0 0 0 -1.57 0 </pose>
+                <horizontal_fov>1.3962634</horizontal_fov>
+                <image>
+                    <width>1920</width>
+                    <height>1080</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.02</near>
+                    <far>300</far>
+                </clip>
+                <noise>
+                    <type>gaussian</type>
+                    <!-- Noise is sampled independently per pixel on each frame.
+                        That pixel's noise value is added to each of its color
+                        channels, which at that point lie in the range [0,1]. -->
+                    <mean>0.0</mean>
+                    <stddev>0.007</stddev>
+                </noise>
+            </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <alwaysOn>true</alwaysOn>
+                <updateRate>0.0</updateRate>
+                <cameraName>my_cam/camera1</cameraName>
+                <imageTopicName>image_raw</imageTopicName>
+                <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+                <frameName>camera_link</frameName>
+                <hackBaseline>0.07</hackBaseline>
+                <distortionK1>0.0</distortionK1>
+                <distortionK2>0.0</distortionK2>
+                <distortionK3>0.0</distortionK3>
+                <distortionT1>0.0</distortionT1>
+                <distortionT2>0.0</distortionT2>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+     <!-- Gazebo Camera plugin  2-->
+     <gazebo reference="camera_link_2">
+        <sensor type="camera" name="camera2">
+            <update_rate>30.0</update_rate>
+            <camera name="head">
+            <pose>0 0 0 0 -1.57 0</pose>    point camera 180 degrees upward
+                <horizontal_fov>1.3962634</horizontal_fov>
+                <image>
+                    <width>1920</width>
+                    <height>1080</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.02</near>
+                    <far>300</far>
+                </clip>
+                <noise>
+                    <type>gaussian</type>
+                    <!-- Noise is sampled independently per pixel on each frame.
+                        That pixel's noise value is added to each of its color
+                        channels, which at that point lie in the range [0,1]. -->
+                    <mean>0.0</mean>
+                    <stddev>0.007</stddev>
+                </noise>
+            </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <alwaysOn>true</alwaysOn>
+                <updateRate>0.0</updateRate>
+                <cameraName>my_cam/camera2</cameraName>   change the name
+                <imageTopicName>image_raw</imageTopicName>
+                <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+                <frameName>camera_link</frameName>
+                <hackBaseline>0.07</hackBaseline>
+                <distortionK1>0.0</distortionK1>
+                <distortionK2>0.0</distortionK2>
+                <distortionK3>0.0</distortionK3>
+                <distortionT1>0.0</distortionT1>
+                <distortionT2>0.0</distortionT2>
+            </plugin>
+        </sensor>
+    </gazebo>
+    
+</robot>

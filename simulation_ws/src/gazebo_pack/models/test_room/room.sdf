@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="room">
+    <static>true</static>
+    <link name="room_link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://test_room/meshes/empty_room.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="room_mesh">
+      <cast_shadows>true</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://test_room/meshes/empty_room.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
