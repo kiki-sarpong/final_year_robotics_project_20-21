@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <robot name="warehouse_cam" >
 
+
     <!-- Specify material colors here -->
     <material name="blue">
         <color rgba="0 0 0.8 1"/>
@@ -121,6 +122,9 @@
 
 
 
+   
+
+
 
     <!-- ////////////////////////// === Joints ==== //////////////////////////////////// -->
   I can spawn all the camera links at origin 0 0 0  but I use the joints to move them to the positions I want them in.
@@ -167,6 +171,7 @@
                     <stddev>0.007</stddev>
                 </noise>
             </camera>
+
             <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
                 <alwaysOn>true</alwaysOn>
                 <updateRate>0.0</updateRate>
