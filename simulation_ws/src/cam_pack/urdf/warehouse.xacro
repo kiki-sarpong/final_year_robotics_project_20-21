@@ -235,6 +235,312 @@
         <material>Gazebo/Red</material>
     </gazebo>
 
+ <!-- Camera Link 6-->
+    <link name="camera_link_6">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="${cam_mass}" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="${cam_inertia_xx}" ixy="0" ixz="0" iyy="${cam_inertia_yy}" iyz="0" izz="${cam_inertia_zz}" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_6">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+<!-- Camera Link 7-->
+    <link name="camera_link_7">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="${cam_mass}" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="${cam_inertia_xx}" ixy="0" ixz="0" iyy="${cam_inertia_yy}" iyz="0" izz="${cam_inertia_zz}" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_7">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+	
+    <!-- Camera Link 8-->
+    <link name="camera_link_8">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="${cam_mass}" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="${cam_inertia_xx}" ixy="0" ixz="0" iyy="${cam_inertia_yy}" iyz="0" izz="${cam_inertia_zz}" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_8">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+<!-- Camera Link 9-->
+    <link name="camera_link_9">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="${cam_mass}" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="${cam_inertia_xx}" ixy="0" ixz="0" iyy="${cam_inertia_yy}" iyz="0" izz="${cam_inertia_zz}" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_9">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <!-- Camera Link 10-->
+    <link name="camera_link_10">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="${cam_mass}" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="${cam_inertia_xx}" ixy="0" ixz="0" iyy="${cam_inertia_yy}" iyz="0" izz="${cam_inertia_zz}" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_10">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <!-- Camera Link 11-->
+    <link name="camera_link_11">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="${cam_mass}" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="${cam_inertia_xx}" ixy="0" ixz="0" iyy="${cam_inertia_yy}" iyz="0" izz="${cam_inertia_zz}" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_11">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <!-- Camera Link 12-->
+    <link name="camera_link_12">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="${cam_mass}" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="${cam_inertia_xx}" ixy="0" ixz="0" iyy="${cam_inertia_yy}" iyz="0" izz="${cam_inertia_zz}" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_12">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <!-- Camera Link 13-->
+    <link name="camera_link_13">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="${cam_mass}" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="${cam_inertia_xx}" ixy="0" ixz="0" iyy="${cam_inertia_yy}" iyz="0" izz="${cam_inertia_zz}" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_13">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+    <!-- Camera Link 14-->
+    <link name="camera_link_14">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="${cam_mass}" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="${cam_inertia_xx}" ixy="0" ixz="0" iyy="${cam_inertia_yy}" iyz="0" izz="${cam_inertia_zz}" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_14">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <!-- Camera Link 15-->
+    <link name="camera_link_15">
+        <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        </collision>
+
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <box size="${cam_box_size} ${cam_box_size} ${cam_box_size}"/>
+        </geometry>
+        <material name="red"/>
+        </visual>
+
+        <inertial>
+        <mass value="${cam_mass}" /> This camera was estimated from the mass(weight) of a logitech camera = 0.25kg
+        <origin xyz="0 0 0" rpy="0 0 0"/> Inertia was calculated from the inertial calculator program
+        <inertia ixx="${cam_inertia_xx}" ixy="0" ixz="0" iyy="${cam_inertia_yy}" iyz="0" izz="${cam_inertia_zz}" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link_15">
+        <mu1>10.0</mu1>
+        <mu2>10.0</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+
+
+
+
+
+
     <!-- ////////////////////////// === Joints ==== //////////////////////////////////// -->
   I can spawn all the camera links at origin 0 0 0  but I use the joints to move them to the positions I want them in.
 
@@ -259,18 +565,88 @@
         <child link="camera_link_3"/>
     </joint>
 
-     <!-- joint = base_link to camera_link -->       camera 2,0
+     <!-- joint = base_link to camera_link -->       camera -2,0
     <joint name="camera_joint_4" type="fixed">
-        <origin xyz="${2*cam_separation} 0 ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <origin xyz="${-2*cam_separation} 0 ${cam_z_joint_height}" rpy="0 0 0"/> 
         <parent link="base_link"/>
         <child link="camera_link_4"/>
     </joint>
 
-    <!-- joint = base_link to camera_link -->       camera -2,0
+    <!-- joint = base_link to camera_link -->       camera 2,0
     <joint name="camera_joint_5" type="fixed">
-        <origin xyz="${-2*cam_separation} 0 ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <origin xyz="${2*cam_separation} 0 ${cam_z_joint_height}" rpy="0 0 0"/> 
         <parent link="base_link"/>
         <child link="camera_link_5"/>
+    </joint>
+
+    <!-- joint = base_link to camera_link -->       camera 0,1
+    <joint name="camera_joint_6" type="fixed">
+        <origin xyz="0 ${1*cam_separation} ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <parent link="base_link"/>
+        <child link="camera_link_6"/>
+    </joint>
+
+    <!-- joint = base_link to camera_link -->       camera -1,1
+    <joint name="camera_joint_7" type="fixed">
+        <origin xyz="${-1*cam_separation} ${1*cam_separation} ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <parent link="base_link"/>
+        <child link="camera_link_7"/>
+    </joint>
+
+    <!-- joint = base_link to camera_link -->       camera 1,1
+    <joint name="camera_joint_8" type="fixed">
+        <origin xyz="${1*cam_separation} ${1*cam_separation} ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <parent link="base_link"/>
+        <child link="camera_link_8"/>
+    </joint>
+
+    <!-- joint = base_link to camera_link -->       camera -2,1
+    <joint name="camera_joint_9" type="fixed">
+        <origin xyz="${-2*cam_separation} ${1*cam_separation} ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <parent link="base_link"/>
+        <child link="camera_link_9"/>
+    </joint>
+
+    <!-- joint = base_link to camera_link -->       camera 2,1
+    <joint name="camera_joint_10" type="fixed">
+        <origin xyz="${2*cam_separation} ${1*cam_separation} ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <parent link="base_link"/>
+        <child link="camera_link_10"/>
+    </joint>
+
+    <!-- joint = base_link to camera_link -->       camera 0,-1
+    <joint name="camera_joint_11" type="fixed">
+        <origin xyz="${0*cam_separation} ${-1*cam_separation} ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <parent link="base_link"/>
+        <child link="camera_link_11"/>
+    </joint>
+
+     <!-- joint = base_link to camera_link -->       camera -1,-1
+    <joint name="camera_joint_12" type="fixed">
+        <origin xyz="${-1*cam_separation} ${-1*cam_separation} ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <parent link="base_link"/>
+        <child link="camera_link_12"/>
+    </joint>
+
+     <!-- joint = base_link to camera_link -->       camera 1,-1
+    <joint name="camera_joint_13" type="fixed">
+        <origin xyz="${1*cam_separation} ${-1*cam_separation} ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <parent link="base_link"/>
+        <child link="camera_link_13"/>
+    </joint>
+
+     <!-- joint = base_link to camera_link -->       camera -2,-1
+    <joint name="camera_joint_14" type="fixed">
+        <origin xyz="${-2*cam_separation} ${-1*cam_separation} ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <parent link="base_link"/>
+        <child link="camera_link_14"/>
+    </joint>
+
+     <!-- joint = base_link to camera_link -->       camera 2,-1
+    <joint name="camera_joint_15" type="fixed">
+        <origin xyz="${2*cam_separation} ${-1*cam_separation} ${cam_z_joint_height}" rpy="0 0 0"/> 
+        <parent link="base_link"/>
+        <child link="camera_link_15"/>
     </joint>
 
 </robot>
