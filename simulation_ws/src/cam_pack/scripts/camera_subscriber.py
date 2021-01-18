@@ -17,8 +17,8 @@ class read_cam(object):
         self.pub = rospy.Publisher("/camera/read_cam_image",Image,queue_size=10)
 
         #subscribers
-        self.sub1 = rospy.Subscriber("/warehouse_cam/camera1/image_raw",Image,self.callback1)   #cam1
-        self.sub6 = rospy.Subscriber("/warehouse_cam/camera6/image_raw",Image,self.callback6) #camera6 is adjacent to camera1
+        self.sub1 = rospy.Subscriber("/factory_cam/camera1/image_raw",Image,self.callback1)   #cam1
+        self.sub6 = rospy.Subscriber("/factory_cam/camera6/image_raw",Image,self.callback6) #camera6 is adjacent to camera1
     
     def callback1(self,img_msg):
         # rospy.loginfo("reading video.....")
@@ -70,8 +70,8 @@ class read_cam(object):
     
 def main(args):
     rospy.init_node('cam_node', anonymous=True)
-    warehouse_cam = read_cam()
-    warehouse_cam.image_analyis()
+    factory_cam = read_cam()
+    factory_cam.image_analyis()
     try:
         rospy.spin()
     except KeyboardInterrupt:

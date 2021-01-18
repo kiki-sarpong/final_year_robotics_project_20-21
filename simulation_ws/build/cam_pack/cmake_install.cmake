@@ -1,8 +1,8 @@
-# Install script for directory: /home/user/simulation_ws/src/cam_pack
+# Install script for directory: /home/kiki/simulation_ws/src/cam_pack
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/user/simulation_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/kiki/simulation_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,18 +32,23 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/simulation_ws/build/cam_pack/catkin_generated/installspace/cam_pack.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kiki/simulation_ws/build/cam_pack/catkin_generated/installspace/cam_pack.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cam_pack/cmake" TYPE FILE FILES
-    "/home/user/simulation_ws/build/cam_pack/catkin_generated/installspace/cam_packConfig.cmake"
-    "/home/user/simulation_ws/build/cam_pack/catkin_generated/installspace/cam_packConfig-version.cmake"
+    "/home/kiki/simulation_ws/build/cam_pack/catkin_generated/installspace/cam_packConfig.cmake"
+    "/home/kiki/simulation_ws/build/cam_pack/catkin_generated/installspace/cam_packConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cam_pack" TYPE FILE FILES "/home/user/simulation_ws/src/cam_pack/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cam_pack" TYPE FILE FILES "/home/kiki/simulation_ws/src/cam_pack/package.xml")
 endif()
 

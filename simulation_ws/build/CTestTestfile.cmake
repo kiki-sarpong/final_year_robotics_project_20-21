@@ -1,8 +1,8 @@
 # CMake generated Testfile for 
-# Source directory: /home/user/simulation_ws/src
-# Build directory: /home/user/simulation_ws/build
+# Source directory: /home/kiki/simulation_ws/src
+# Build directory: /home/kiki/simulation_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-subdirs(gtest)
-subdirs(cam_pack)
+subdirs("gtest")
+subdirs("cam_pack")

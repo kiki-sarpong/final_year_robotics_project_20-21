@@ -1,2 +1,2 @@
 cam_pack:gazebo_pack
--DCATKIN_DEVEL_PREFIX=/home/user/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/user/simulation_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/kiki/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kiki/simulation_ws/install -G Unix Makefiles

@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="diff">
+    <static>true</static>
+    <!-- <pose>-15 -25 0 0 0 0</pose> -->
+    <link name="diff_link">
+      <collision name="diff">
+      <!-- <pose>50 0 3 0 0 0</pose> -->
+        <geometry>
+          <!-- <mesh>
+            <uri>model://diff/meshes/fb5.dae</uri> 
+          </mesh> -->
+          <box>
+            <size>1 1 1 </size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="diff">
+      <!-- <cast_shadows>true</cast_shadows> -->
+        <geometry>
+          <mesh>
+            <uri>model://diff/meshes/fb5.dae</uri> 
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+  </model>
+</sdf>

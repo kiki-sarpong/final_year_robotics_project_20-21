@@ -1,8 +1,8 @@
-prefix=/home/user/simulation_ws/devel
+prefix=/home/kiki/simulation_ws/devel
 
 Name: cam_pack
 Description: Description of cam_pack
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/user/simulation_ws/devel/lib 
+Libs: -L${prefix}/lib 
 Requires: 

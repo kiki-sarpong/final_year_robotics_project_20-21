@@ -2,25 +2,22 @@
 <sdf version="1.5">
   <model name="warehouse">
     <static>true</static>
-    <!-- <pose>-15 -25 0 0 0 0</pose> -->
     <link name="warehouse_link">
-      <collision name="warehouse">
-      <!-- <pose>50 0 3 0 0 0</pose> -->
+      <collision name="collision">
         <geometry>
           <box>
-            <size>70 70 20.5</size>   70 by 70 is exaggerated but works to get the ceiling over the warehouse
+            <size>1 1 1 </size>
           </box>
         </geometry>
       </collision>
-      <visual name="warehouse">
-      <!-- <cast_shadows>true</cast_shadows> -->
+      <visual name="warehouse_mesh">
+      <cast_shadows>true</cast_shadows>
         <geometry>
           <mesh>
-            <uri>model://warehouse/meshes/warehouse.dae</uri> 
+            <uri>model://warehouse/meshes/warehouse.dae</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-
   </model>
 </sdf>
