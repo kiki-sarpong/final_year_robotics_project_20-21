@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <world name="default">
+
+
+      <scene>
+      <ambient>0.7 0.7 0.7 1</ambient>
+      <!-- <background>0.25 0.25 0.25 1</background> -->
+      <shadows>True</shadows>
+        </scene>
+
+        <include>  <!--Add a light source-->
+            <uri>model://sun</uri>
+        </include>
+
+        <include>  <!--Add a ground plane-->
+            <uri>model://ground_plane</uri>
+        </include>
+
+        <model name = "restaurant">
+            <include>
+            <static>true</static>
+            <uri>model://restaurant</uri>
+<!--                This pose puts the building model in the center of the world-->
+            <pose> -7.5 -7.5 0 0 0 0 </pose>
+            </include>
+        </model>
+
+         Restaurant chair distribution
+        <population name = "chair_distribution">
+                <model name = "chair_setup">
+                    <include>
+                        <static>true</static>
+                        <uri>model://chair_table</uri>
+                    </include>
+                </model>
+                <pose> 0 -1 0 0 0 0 </pose>
+                <box>
+                     <size>13 13.5 0.1</size>
+                </box>
+                <model_count>14</model_count>
+                <distribution>
+                    <type>uniform</type>
+                </distribution>
+        </population>
+      
+
+   
+
+
+       
+  </world>
+</sdf>

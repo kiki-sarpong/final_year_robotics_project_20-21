@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <world name="default">
+
+        <scene>
+      <ambient>0.7 0.7 0.7 1</ambient>
+      <!-- <background>0.25 0.25 0.25 1</background> -->
+      <shadows>false</shadows>
+        </scene>
+        <include>  <!--Add a light source-->
+            <uri>model://sun</uri>
+        </include>
+
+        <include>  <!--Add a ground plane-->
+            <uri>model://ground_plane</uri>
+        </include>
+        <include>  <!--Add custom room model-->
+            <static>true</static>
+            <uri>model://factory</uri>
+            <name> factory </name>
+            <pose> -15 -25 0 0 0 0 </pose>
+        </include> 
+
+        conveyor1
+        <model name = "conveyor1">
+        <include>  <!--Add custom room model-->
+            <static>true</static>
+            <uri>model://conveyor</uri>
+            <pose> 1 -10 0 0 0 0 </pose>
+        </include> 
+        </model>
+
+  conveyor2
+        <model name = "conveyor2">
+        <include>  <!--Add custom room model-->
+            <static>true</static>
+            <uri>model://conveyor</uri>
+            <pose> 9 8 0 0 0 0 </pose>
+        </include> 
+        </model>
+
+machine1
+        <model name = "machine1">
+        <include>  <!--Add custom room model-->
+            <static>true</static>
+            <uri>model://machine</uri>
+            <pose> 0 5 0.5 0 0 </pose>
+        </include> 
+        </model>
+
+
+machine2
+        <model name = "machine2">
+        <include>  <!--Add custom room model-->
+            <static>true</static>
+            <!-- <uri>model://fire_</uri> -->
+            <!-- <pose> 11 13 0.5 0 0 </pose> -->
+        </include> 
+        </model>
+
+
+
+
+    <!-- <population name = "box_population"> 
+            <model name = "box">
+                <include>
+                    <static>true</static>
+                    <uri>model://warehouse_robot</uri>
+                </include>
+            </model>
+            <pose> 0 0 0 0 0 0 </pose>
+            <box>
+                 <size>30 50 0.09</size>
+            </box>
+            <model_count>15</model_count>
+            <distribution>
+                <type>uniform</type>
+            </distribution>
+    </population> -->
+
+
+    pallet population
+    <population name = "pallet1_population"> 
+            <model name = "p1">
+                <include>
+                    <static>true</static>
+                    <uri>model://pallet</uri>
+                </include>
+            </model>
+            <pose> -12 -18 0 0 0 0 </pose>  this pose starts from the origin of gazebo which is the centre of this model
+            <box>
+                 <size>6.5 15 0.09</size>
+            </box>
+            <model_count>8</model_count>
+            <distribution>
+                <type>uniform</type>
+            </distribution>
+    </population>
+
+    colored_rack population
+    <population name = "colored_rack1_population"> 
+            <model name = "c_rack1">
+                <include>
+                    <static>true</static>
+                    <uri>model://colored_rack</uri>
+                </include>
+            </model>
+            <pose>8.5 17.5 0 0 0 0 </pose>  for this pose 0 0 0 starts from the origin of gazebo
+            <box>
+                 <size>12 5 0.09</size>
+            </box>
+            <model_count>4</model_count>
+            <distribution>
+                <type>linear-x</type>
+            </distribution>
+    </population>
+
+    green_rack population
+    <population name = "green_rack1_population"> 
+            <model name = "g_rack1">
+                <include>
+                    <static>true</static>
+                    <uri>model://green_rack</uri>
+                </include>
+            </model>
+            <pose>-8.5 21 0 0 0 0 </pose>  for this pose 0 0 0 starts from the origin of gazebo
+            <box>
+                 <size>12 4 0.09</size>
+            </box>
+            <model_count>4</model_count>
+            <distribution>
+                <type>linear-x</type>
+            </distribution>
+    </population>
+
+     green_rack population
+    <population name = "green_rack2_population"> 
+            <model name = "g_rack2">
+                <include>
+                    <static>true</static>
+                    <uri>model://green_rack</uri>
+                </include>
+            </model>
+            <pose>-8.5 16 0 0 0 0 </pose>  
+            <box>
+                 <size>12 4 0.09</size>
+            </box>
+            <model_count>4</model_count>
+            <distribution>
+                <type>linear-x</type>
+            </distribution>
+    </population>
+
+
+    <!-- boxes
+    <population name = "boxes1_population"> 
+            <model name = "boxes1">
+                <include>
+                    <static>true</static>
+                    <uri>model://boxes</uri>
+                </include>
+            </model>
+            <pose>14.5 -4.5 0 0 0 3.142 </pose>  
+            <box>
+                 <size>5 16 0.09</size>
+            </box>
+            <model_count>4</model_count>
+            <distribution>
+                <type>linear-y</type>
+            </distribution>
+    </population> -->
+
+
+
+
+        <!-- <include>  
+            <static>true</static>
+            <uri>model://postbox</uri>
+            <pose> 0 0 0 0 0 0 </pose>
+        </include>  -->
+
+
+
+            <model name = "pallets_1">
+                <include>
+                    <static>true</static>
+                    <uri>model://pallet</uri>
+                    <pose> 0 0 0 0 0 0 </pose>
+                </include>
+            </model>
+
+
+        
+            
+
+                
+  </world>
+</sdf>
