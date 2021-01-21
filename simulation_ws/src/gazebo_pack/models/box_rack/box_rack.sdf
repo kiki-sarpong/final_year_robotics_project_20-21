@@ -1,20 +1,20 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
-  <model name="ceiling">
+  <model name="box_rack">
     <static>true</static>
-    <link name="ceiling_link">
+    <link name="box_rack_link">
       <collision name="collision">
         <geometry>
-          <mesh>
-            <uri>model://test_ceiling/meshes/ceiling.dae</uri>
-          </mesh>
+          <box>
+            <size>1 1 1</size>
+          </box>
         </geometry>
       </collision>
-      <visual name="ceiling_mesh">
+      <visual name="box_rack_mesh">
       <cast_shadows>true</cast_shadows>
         <geometry>
           <mesh>
-            <uri>model://test_ceiling/meshes/ceiling.dae</uri>
+            <uri>model://box_rack/meshes/box_rack.dae</uri>
           </mesh>
         </geometry>
       </visual>

@@ -17,20 +17,20 @@
             <uri>model://ground_plane</uri>
         </include>
 
-        <model name = "restaurant">
+        <model name = "box_rack">
             <include>
             <static>true</static>
-            <uri>model://restaurant</uri>
-            <pose> -10 -10 0 0 0 0 </pose>
+            <uri>model://box_rack</uri>
+            <pose> 0 0 0 0 0 0 </pose>
             </include>
         </model>
 
-        <model name = "chair_table">
-            <include>
-            <static>true</static>
-            <uri>model://chair_table</uri>
-            </include>
-        </model>
+<!--        <model name = "chair_table">-->
+<!--            <include>-->
+<!--            <static>true</static>-->
+<!--            <uri>model://chair_table</uri>-->
+<!--            </include>-->
+<!--        </model>-->
       
 
    
