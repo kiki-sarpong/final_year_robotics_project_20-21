@@ -81,7 +81,7 @@
                 <pose> -15 33.5 0.2 0 0 0 </pose>
                 <distribution>
                      <type>grid</type>
-                     <rows>4</rows>
+                     <rows>3</rows>
                      <cols>5</cols>
                      <step>4.5 3.5 0</step>
                 </distribution>
@@ -98,7 +98,7 @@
                 <pose> 11.5 33.5 0.2 0 0 0 </pose>
                 <distribution>
                      <type>grid</type>
-                     <rows>4</rows>
+                     <rows>3</rows>
                      <cols>5</cols>
                      <step>4.5 3.5 0</step>
                 </distribution>

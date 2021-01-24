@@ -1,0 +1,204 @@
+<?xml version="1.0" ?>
+<robot>
+
+    <!-- Gazebo Camera plugin  1-->
+    <gazebo reference="camera_link_1">          
+        <sensor type="wideanglecamera" name="camera1">
+            <update_rate>30.0</update_rate>
+            <camera name="head">
+              <pose>0 0 0 0 1.57 0</pose>       
+                <horizontal_fov>3.1415</horizontal_fov> 180 degrees
+                <image>
+                    <width>1080</width>
+                    <height>720</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.01</near>
+                    <far>100</far>
+                </clip>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.007</stddev>
+                </noise>
+            <lens>
+                <type>stereographic</type>
+                <scale_to_hfov>true</scale_to_hfov>
+                <cutoff_angle>1.5707</cutoff_angle>
+                <env_texture_size>512</env_texture_size>
+           </lens>
+        </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <alwaysOn>true</alwaysOn>
+                <updateRate>0.0</updateRate>
+                <cameraName>restaurant/camera1</cameraName> change the name to robot_name..camera_name
+                <imageTopicName>image_raw</imageTopicName>
+                <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+                <frameName>camera1_link</frameName>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+
+
+
+      <!-- Gazebo Camera plugin  2-->
+    <gazebo reference="camera_link_2">          
+        <sensor type="wideanglecamera" name="camera2">
+            <update_rate>30.0</update_rate>
+            <camera name="head">
+              <pose>0 0 0 0 1.57 0</pose>       
+                <horizontal_fov>3.1415</horizontal_fov> 180 degrees
+                <image>
+                    <width>1080</width>
+                    <height>720</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.01</near>
+                    <far>100</far>
+                </clip>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.007</stddev>
+                </noise>
+            <lens>
+                <type>stereographic</type>
+                <scale_to_hfov>true</scale_to_hfov>
+                <cutoff_angle>1.5707</cutoff_angle>
+                <env_texture_size>512</env_texture_size>
+           </lens>
+        </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <alwaysOn>true</alwaysOn>
+                <updateRate>0.0</updateRate>
+                <cameraName>restaurant/camera2</cameraName> change the name to robot_name..camera_name
+                <imageTopicName>image_raw</imageTopicName>
+                <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+                <frameName>camera2_link</frameName>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+      <!-- Gazebo Camera plugin  3-->
+    <gazebo reference="camera_link_3">          
+        <sensor type="wideanglecamera" name="camera3">
+            <update_rate>30.0</update_rate>
+            <camera name="head">
+              <pose>0 0 0 0 1.57 0</pose>       
+                <horizontal_fov>3.1415</horizontal_fov> 180 degrees
+                <image>
+                    <width>1080</width>
+                    <height>720</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.01</near>
+                    <far>100</far>
+                </clip>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.007</stddev>
+                </noise>
+            <lens>
+                <type>stereographic</type>
+                <scale_to_hfov>true</scale_to_hfov>
+                <cutoff_angle>1.5707</cutoff_angle>
+                <env_texture_size>512</env_texture_size>
+           </lens>
+        </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <alwaysOn>true</alwaysOn>
+                <updateRate>0.0</updateRate>
+                <cameraName>restaurant/camera3</cameraName> change the name to robot_name..camera_name
+                <imageTopicName>image_raw</imageTopicName>
+                <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+                <frameName>camera3_link</frameName>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+      <!-- Gazebo Camera plugin  4-->
+    <gazebo reference="camera_link_4">          
+        <sensor type="wideanglecamera" name="camera4">
+            <update_rate>30.0</update_rate>
+            <camera name="head">
+              <pose>0 0 0 0 1.57 0</pose>       
+                <horizontal_fov>3.1415</horizontal_fov> 180 degrees
+                <image>
+                    <width>1080</width>
+                    <height>720</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.01</near>
+                    <far>100</far>
+                </clip>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.007</stddev>
+                </noise>
+            <lens>
+                <type>stereographic</type>
+                <scale_to_hfov>true</scale_to_hfov>
+                <cutoff_angle>1.5707</cutoff_angle>
+                <env_texture_size>512</env_texture_size>
+           </lens>
+        </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <alwaysOn>true</alwaysOn>
+                <updateRate>0.0</updateRate>
+                <cameraName>restaurant/camera4</cameraName> change the name to robot_name..camera_name
+                <imageTopicName>image_raw</imageTopicName>
+                <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+                <frameName>camera4_link</frameName>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+
+
+     <!-- Gazebo Camera plugin  5-->
+    <gazebo reference="camera_link_5">
+        <sensor type="wideanglecamera" name="camera5">
+            <update_rate>30.0</update_rate>
+            <camera name="head">
+              <pose>0 0 0 0 1.57 0</pose>
+                <horizontal_fov>3.1415</horizontal_fov> 180 degrees
+                <image>
+                    <width>1080</width>
+                    <height>720</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.01</near>
+                    <far>100</far>
+                </clip>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.007</stddev>
+                </noise>
+            <lens>
+                <type>stereographic</type>
+                <scale_to_hfov>true</scale_to_hfov>
+                <cutoff_angle>1.5707</cutoff_angle>
+                <env_texture_size>512</env_texture_size>
+           </lens>
+        </camera>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <alwaysOn>true</alwaysOn>
+                <updateRate>0.0</updateRate>
+                <cameraName>restaurant/camera5</cameraName> change the name to robot_name..camera_name
+                <imageTopicName>image_raw</imageTopicName>
+                <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+                <frameName>camera5_link</frameName>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+</robot>

@@ -1,3 +1,0 @@
-<launch>
-    <node pkg="cam_pack" type="camera_subscriber.py" name="cam_node" output="screen" />
-</launch>

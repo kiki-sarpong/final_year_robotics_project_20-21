@@ -2,5 +2,5 @@
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <arg name="world_name" value="$(find gazebo_pack)/worlds/warehouse.world"/>
     </include>
-<!--    <include file="$(find cam_pack)/launch/fisheye_camera_xacro.launch"/>-->
+    <include file="$(find cam_pack)/launch/warehouse_camera.launch"/>
 </launch>

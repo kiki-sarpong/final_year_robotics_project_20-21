@@ -17,23 +17,100 @@
             <uri>model://ground_plane</uri>
         </include>
 
-        <model name = "box_rack">
+        <model name = "b">
             <include>
             <static>true</static>
-            <uri>model://box_rack</uri>
-            <pose> 0 0 0 0 0 0 </pose>
+            <uri>model://restaurant</uri>
+<!--            <pose> -25 -40 0 0 0 0 </pose>-->
+             <pose> -7.5 -7.5 0 0 0 0 </pose>
             </include>
         </model>
 
-<!--        <model name = "chair_table">-->
-<!--            <include>-->
-<!--            <static>true</static>-->
-<!--            <uri>model://chair_table</uri>-->
-<!--            </include>-->
-<!--        </model>-->
-      
 
-   
+<!--       <model name="bb">-->
+<!--        <static>true</static>-->
+<!--        <pose> 0 0 0.1 0 0 0 </pose>-->
+<!--&lt;!&ndash;        <pose> 20 35 0.25 0 0 0 </pose>&ndash;&gt;-->
+<!--        <link name="link">-->
+<!--          <visual name="mesh">-->
+<!--            <geometry>-->
+<!--              <box>-->
+<!--                <size>4 2 0.01 </size>-->
+<!--              </box>-->
+<!--            </geometry>-->
+<!--              <material>-->
+<!--            <ambient>0.5 0.75 0 1</ambient>-->
+<!--            <diffuse>0.7 0.9 0 1</diffuse>-->
+<!--            <specular>0.2 0.2 0.2 64</specular>-->
+<!--            <emissive>0.1 0 0.1 1</emissive>-->
+<!--          </material>-->
+<!--          </visual>-->
+<!--        </link>-->
+
+<!--      </model>-->
+
+
+       <model name="bb">
+        <static>true</static>
+        <pose> -4 -4 0.15 0 0 0 </pose>
+        <link name="link">
+          <visual name="mesh">
+            <geometry>
+              <box>
+                <size>0.1 0.1 0.1 </size>
+              </box>
+            </geometry>
+              <material>
+            <ambient>0.5 0.75 0 1</ambient>
+            <diffuse>0.7 0.9 0 1</diffuse>
+            <specular>0.2 0.2 0.2 64</specular>
+            <emissive>0.1 0 0.1 1</emissive>
+          </material>
+          </visual>
+        </link>
+
+      </model>
+
+<!--      <model name="bbb">-->
+<!--        <static>true</static>-->
+<!--        <pose> 4 4 0.15 0 0 0 </pose>-->
+<!--        <link name="lbink">-->
+<!--          <visual name="mbesh">-->
+<!--            <geometry>-->
+<!--              <box>-->
+<!--                <size>0.1 0.1 0.1 </size>-->
+<!--              </box>-->
+<!--            </geometry>-->
+<!--              <material>-->
+<!--            <ambient>0.5 0.75 0 1</ambient>-->
+<!--            <diffuse>0.7 0.9 0 1</diffuse>-->
+<!--            <specular>0.2 0.2 0.2 64</specular>-->
+<!--            <emissive>0.1 0 0.1 1</emissive>-->
+<!--          </material>-->
+<!--          </visual>-->
+<!--        </link>-->
+<!--      </model>-->
+
+
+<!--       <model name="bbbb">-->
+<!--        <static>true</static>-->
+<!--        <pose> -4 4 0.15 0 0 0 </pose>-->
+<!--        <link name="lbbink">-->
+<!--          <visual name="mbbesh">-->
+<!--            <geometry>-->
+<!--              <box>-->
+<!--                <size>0.1 0.1 0.1 </size>-->
+<!--              </box>-->
+<!--            </geometry>-->
+<!--              <material>-->
+<!--            <ambient>0.5 0.75 0 1</ambient>-->
+<!--            <diffuse>0.7 0.9 0 1</diffuse>-->
+<!--            <specular>0.2 0.2 0.2 64</specular>-->
+<!--            <emissive>0.1 0 0.1 1</emissive>-->
+<!--          </material>-->
+<!--          </visual>-->
+<!--        </link>-->
+<!--      </model>-->
 
 
        
