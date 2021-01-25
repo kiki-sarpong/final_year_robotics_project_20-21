@@ -87,35 +87,35 @@ class image_stitch(object):
 
         while not rospy.is_shutdown():
             #put all the images in an array
-            # active = np.array([(self.camera1 > 0),(self.camera2 > 0) , (self.camera3 > 0),
-            # (self.camera4 > 0), (self.camera5 > 0),(self.camera6 > 0),(self.camera7 > 0) , (self.camera8 > 0),
-            # (self.camera4 > 0), (self.camera5 > 0)])
+            active = np.array([(self.camera1 > 0),(self.camera2 > 0) , (self.camera3 > 0),
+            (self.camera4 > 0), (self.camera5 > 0)])
 
-            active = np.array([(self.camera5 > 0)])
-            cond = active.shape    # get the shape... if an image isn't prest len(cond) = 1
+            # active = np.array([(self.camera5 > 0),(self.camera2 > 0)])
+            cond = active.shape    # get the shape... if an image isn't present len(cond) = 1
+            print(cond)
             if len(cond) == 4:
-                # camera1_img = self.camera1
-                # camera2_img = self.camera2
-                # camera3_img = self.camera3
-                # camera4_img = self.camera4
+                camera1_img = self.camera1
+                camera2_img = self.camera2
+                camera3_img = self.camera3
+                camera4_img = self.camera4
                 camera5_img = self.camera5
 
                 
                 #undistort images
-                # dist_camera1 = self.undistort(camera1_img,K1,D1)
-                # dist_camera2 = self.undistort(camera2_img,K1,D1)
-                # dist_camera3 = self.undistort(camera3_img,K1,D1)
-                # dist_camera4 = self.undistort(camera4_img,K1,D1)
+                dist_camera1 = self.undistort(camera1_img,K1,D1)
+                dist_camera2 = self.undistort(camera2_img,K1,D1)
+                dist_camera3 = self.undistort(camera3_img,K1,D1)
+                dist_camera4 = self.undistort(camera4_img,K1,D1)
                 dist_camera5 = self.undistort(camera5_img,K1,D1)
 
 
-                # cv2.imwrite("factory_imgs/camera1.png",dist_camera1)
-                # cv2.imwrite("factory_imgs/camera2.png",dist_camera2)
-                # cv2.imwrite("factory_imgs/camera3.png",dist_camera3)
-                # cv2.imwrite("factory_imgs/camera4.png",dist_camera4)
-                # cv2.imwrite("factory_imgs/camera5.png",dist_camera5)
+                cv2.imwrite("factory_imgs/camera1.png",dist_camera1)
+                cv2.imwrite("factory_imgs/camera2.png",dist_camera2)
+                cv2.imwrite("factory_imgs/camera3.png",dist_camera3)
+                cv2.imwrite("factory_imgs/camera4.png",dist_camera4)
+                cv2.imwrite("factory_imgs/camera5.png",dist_camera5)
 
-                cv2.imwrite("scaling_2_img.png", dist_camera5)
+                # cv2.imwrite("scaling_2_img.png", dist_camera5)
 
 
                 print("done")
