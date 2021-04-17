@@ -22,7 +22,9 @@ Project will be simulated on ROS and Gazebo. <br/><br/>
 # Progress as of now
 # Process:<br/>
 - Stereo camera setup and calibration; setting cameras in warehouse environment.<br/>
-- 
+![image](https://user-images.githubusercontent.com/17696533/115128844-b84b4a80-9fae-11eb-80f8-0c590d70603b.png)
+<br/>
+
 - Depth segmentation based on environment and camera height.<br/>
 ![image](https://user-images.githubusercontent.com/17696533/115128745-014ecf00-9fae-11eb-9fc8-6a55b6080a24.png)
 <br/>
