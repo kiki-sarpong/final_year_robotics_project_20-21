@@ -6,7 +6,7 @@ Final project ROS and Gazebo files<br/>
 
 # Brief project description:<br/>
 
-A Centralized system using multiple stereo cameras placed on the ceiling of a building looking down to give real-time mapping of an indoor environment<br/>
+A Centralized system using multiple stereo cameras placed on the ceiling of a warehouse looking down to give real-time mapping of an indoor environment<br/>
 An image from each stereo camera is stitched across multiple cameras to get a bird's eye view overview of the entire environment.<br/>
 A depth segmentation is ran to separate free pathways from obstructed pathways.<br/>
 The segmented pathways in the multiple images are stitched together to get a complete outline of free space in the indoor environment.<br/>
