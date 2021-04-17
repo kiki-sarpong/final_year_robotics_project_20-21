@@ -24,6 +24,7 @@ Project will be simulated on ROS and Gazebo. <br/><br/>
 - Stereo camera setup and calibration; setting cameras in warehouse environment.<br/>
 - 
 - Depth segmentation based on environment and camera height.<br/>
-
+![image](https://user-images.githubusercontent.com/17696533/115128745-014ecf00-9fae-11eb-9fc8-6a55b6080a24.png)
+<br/>
 
 - Finding homography between images of the different camera setups for image stitching
