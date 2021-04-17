@@ -15,8 +15,15 @@ This project is done entirely in simulation due to COVID
 Project will be simulated on ROS and Gazebo. <br/><br/>
 
 # Warehouse environment <br/>
+![image](https://user-images.githubusercontent.com/17696533/115128526-55f14a80-9fac-11eb-8f2a-5a5d5418afd9.png)
 
+![image](https://user-images.githubusercontent.com/17696533/115128531-5be72b80-9fac-11eb-9bc2-9e00e76177a9.png)
+
+# Progress as of now
 # Process:<br/>
-- Stereo camera setup and calibration; setting cameras in warehouse environment.
-- Depth segmentation based on environment and camera height.
+- Stereo camera setup and calibration; setting cameras in warehouse environment.<br/>
+- 
+- Depth segmentation based on environment and camera height.<br/>
+
+
 - Finding homography between images of the different camera setups for image stitching
