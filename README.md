@@ -33,5 +33,7 @@ Project will be simulated on ROS and Gazebo. <br/><br/>
 ![image](https://user-images.githubusercontent.com/17696533/115128892-06604e00-9faf-11eb-9af2-3cf35aa44027.png)
 <br/>
 
-- Path generation and point cloud generation.
+- Path generation.
+![image](https://user-images.githubusercontent.com/17696533/115129037-45db6a00-9fb0-11eb-9500-0758228fd73b.png)
+
 
