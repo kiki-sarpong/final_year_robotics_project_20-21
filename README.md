@@ -30,8 +30,7 @@ Project will be simulated on ROS and Gazebo. <br/><br/>
 <br/>
 
 - Finding homography between images of the different camera setups for image stitching
-![image](https://user-images.githubusercontent.com/17696533/115128892-06604e00-9faf-11eb-9af2-3cf35aa44027.png)
-<br/>
+![image](https://user-images.githubusercontent.com/17696533/115616831-a9221080-a2be-11eb-8fd7-77dbe74cf645.png)<br/>
 
 - Path generation.
 ![image](https://user-images.githubusercontent.com/17696533/115129037-45db6a00-9fb0-11eb-9500-0758228fd73b.png)
