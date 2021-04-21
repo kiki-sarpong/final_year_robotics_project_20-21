@@ -35,7 +35,7 @@ Project will be simulated on ROS and Gazebo. <br/><br/>
 - Mask stitching comes out a bit noisy and will need additional noise reduction.
 ![image](https://user-images.githubusercontent.com/17696533/115617226-277eb280-a2bf-11eb-9ef9-8874efe0558a.png)<br/>
 
-- Path generation.
-![image](https://user-images.githubusercontent.com/17696533/115129037-45db6a00-9fb0-11eb-9500-0758228fd73b.png)
+- Path generation. Image dimensionality is reduced for path planning to speed up process.
+![image](https://user-images.githubusercontent.com/17696533/115617718-bc81ab80-a2bf-11eb-84a2-08d6256c8697.png)
 
 
