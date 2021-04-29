@@ -30,7 +30,7 @@ Project will be simulated on ROS and Gazebo. <br/><br/>
 <br/>
 
 - Finding homography between images of the different camera setups for image stitching
-![image](https://user-images.githubusercontent.com/17696533/115616831-a9221080-a2be-11eb-8fd7-77dbe74cf645.png)
+![image](https://user-images.githubusercontent.com/17696533/116504129-a78bb600-a885-11eb-8b02-2e27261ed68d.png)
 
 - Mask stitching comes out a bit noisy and will need additional noise reduction.
 ![image](https://user-images.githubusercontent.com/17696533/115617226-277eb280-a2bf-11eb-9ef9-8874efe0558a.png)<br/>
