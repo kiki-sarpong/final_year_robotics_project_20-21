@@ -39,6 +39,7 @@ Project will be simulated on ROS and Gazebo. <br/><br/>
 - Path generation. Image dimensionality is reduced for path planning to speed up process.
 ![image](https://user-images.githubusercontent.com/17696533/115617718-bc81ab80-a2bf-11eb-84a2-08d6256c8697.png)
 ![image](https://user-images.githubusercontent.com/17696533/115618107-3c0f7a80-a2c0-11eb-8e06-e896ed7aacdb.png)
+![image](https://user-images.githubusercontent.com/17696533/116504798-2fbe8b00-a887-11eb-8bb0-ea0a0320dcb7.png)
 ![image](https://user-images.githubusercontent.com/17696533/116504669-d9e9e300-a886-11eb-88b1-38fd3e8b9444.png)
 
 
