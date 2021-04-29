@@ -26,7 +26,7 @@ Project will be simulated on ROS and Gazebo. <br/><br/>
 <br/>
 
 - Depth segmentation based on environment and camera height.<br/>
-![stereo_2](https://user-images.githubusercontent.com/17696533/116504262-e6217080-a885-11eb-8322-dadc6b919961.PNG)
+![image](https://user-images.githubusercontent.com/17696533/116505027-c8550b00-a887-11eb-9a01-758466f5509b.png)
 ![image](https://user-images.githubusercontent.com/17696533/115128745-014ecf00-9fae-11eb-9fc8-6a55b6080a24.png)
 <br/>
 
@@ -41,5 +41,7 @@ Project will be simulated on ROS and Gazebo. <br/><br/>
 ![image](https://user-images.githubusercontent.com/17696533/115618107-3c0f7a80-a2c0-11eb-8e06-e896ed7aacdb.png)
 ![image](https://user-images.githubusercontent.com/17696533/116504798-2fbe8b00-a887-11eb-8bb0-ea0a0320dcb7.png)
 ![image](https://user-images.githubusercontent.com/17696533/116504669-d9e9e300-a886-11eb-88b1-38fd3e8b9444.png)
-
+<br/>
+- Additional noise reduction is needed as well as more constraints on the path planning to create paths within
+a specified boundary.
 
