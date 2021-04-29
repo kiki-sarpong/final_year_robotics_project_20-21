@@ -17,7 +17,7 @@ Project will be simulated on ROS and Gazebo. <br/><br/>
 # Warehouse environment <br/>
 ![image](https://user-images.githubusercontent.com/17696533/115128526-55f14a80-9fac-11eb-8f2a-5a5d5418afd9.png)
 
-![image](https://user-images.githubusercontent.com/17696533/115616407-28631480-a2be-11eb-8ca8-ab62c1eb12eb.png)
+![warehouse](https://user-images.githubusercontent.com/17696533/116504020-714e3680-a885-11eb-96c3-52d7c082bdf2.PNG)
 
 # Progress as of now
 # Process:<br/>
