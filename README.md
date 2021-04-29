@@ -26,6 +26,7 @@ Project will be simulated on ROS and Gazebo. <br/><br/>
 <br/>
 
 - Depth segmentation based on environment and camera height.<br/>
+![stereo_2](https://user-images.githubusercontent.com/17696533/116504262-e6217080-a885-11eb-8322-dadc6b919961.PNG)
 ![image](https://user-images.githubusercontent.com/17696533/115128745-014ecf00-9fae-11eb-9fc8-6a55b6080a24.png)
 <br/>
 
