@@ -11,7 +11,7 @@ An image from each stereo camera is stitched across multiple cameras to get a bi
 A depth segmentation is ran to separate free pathways from obstructed pathways.<br/>
 The segmented pathways in the multiple images are stitched together to get a complete outline of free space in the indoor environment.<br/>
 A path planning algorithm is ran to plan paths for the warehouse robots to move materials from one location to the other.<br/>
-This project is done entirely in simulation due to COVID
+This project is done entirely in simulation due to COVID<br/>
 Project will be simulated on ROS and Gazebo. <br/><br/>
 
 # Warehouse environment <br/>
