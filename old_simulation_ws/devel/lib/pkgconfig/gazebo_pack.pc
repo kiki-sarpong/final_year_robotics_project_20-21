@@ -1,8 +1,0 @@
-prefix=/home/user/simulation_ws/devel
-
-Name: gazebo_pack
-Description: Description of gazebo_pack
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/user/simulation_ws/devel/lib 
-Requires: 

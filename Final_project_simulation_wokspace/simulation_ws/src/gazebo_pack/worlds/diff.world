@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <world name="default">
+
+        <scene>
+      <ambient>0.95 0.95 0.95 1</ambient>
+      <!-- <background>0.25 0.25 0.25 1</background> -->
+      <shadows>false</shadows>
+        </scene>
+        <include>  <!--Add a light source-->
+            <uri>model://sun</uri>
+        </include>
+
+        <include>  <!--Add a ground plane-->
+            <uri>model://ground_plane</uri>
+        </include>
+
+<!--        <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--            <static>true</static>-->
+<!--            <uri>model://checkerboard_plane</uri>-->
+<!--            <name> diff </name>-->
+<!--            <pose> -1 -15 0.5 0 0 0 </pose>-->
+<!--        </include>-->
+
+      warehouse model
+        <model name = "warehouse">
+            <include>  <!--Add custom room model-->
+                <static>true</static>
+                <uri>model://warehouse</uri>
+<!--                centering the warehouse model-->
+                <pose> 12.5 -20 0 0 0 1.57 </pose>
+            </include>
+        </model>
+
+<!--      <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--            <static>true</static>-->
+<!--            <uri>model://image_feature</uri>-->
+<!--            <name> image_feature</name>-->
+<!--           <pose> -1 -15 0.1 0 0 0 </pose>-->
+<!--      </include>-->
+
+<!--      <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--            <static>true</static>-->
+<!--            <uri>model://image_feature2</uri>-->
+<!--            <name> image_feature</name>-->
+<!--           <pose> -1 -5 0.1 0 0 0 </pose>-->
+<!--      </include>-->
+
+<!--      <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--            <static>true</static>-->
+<!--            <uri>model://image_feature3</uri>-->
+<!--            <name> image_feature</name>-->
+<!--           <pose> -1 5 0.1 0 0 0 </pose>-->
+<!--      </include>-->
+
+
+<!--      <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--            <static>true</static>-->
+<!--            <uri>model://image_feature4</uri>-->
+<!--            <name> image_feature</name>-->
+<!--           <pose> -1 15 0.1 0 0 0 </pose>-->
+<!--      </include>-->
+
+<!--        <model name = "rack_1">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://rack</uri>-->
+<!--                <pose> 3 8 0 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+<!--        <model name = "rack_2">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://rack</uri>-->
+<!--                <pose> -7 12.5 0 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+<!--        <model name = "rack_3">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://rack</uri>-->
+<!--                <pose> -7 2.5 0 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+<!--        <model name = "rack_4">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://rack</uri>-->
+<!--                <pose> -10 -4.5 0 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+<!--        <model name = "rack_5">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://rack</uri>-->
+<!--                <pose> -10 -9 0 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+
+
+<!--        <model name = "box_stack_1">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://box_stack</uri>-->
+<!--                <pose> 3 -14 0 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+<!--        <model name = "boxes_1">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://boxes</uri>-->
+<!--                <pose> -5 -16 0 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+<!--         -->
+
+
+
+<!--        <model name = "pallets_1">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://pallet</uri>-->
+<!--                <pose> 2 -5 0 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+<!--        <model name = "pallets_2">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://pallet</uri>-->
+<!--                <pose> 2 -7 0 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+<!--        <model name = "pallets_3">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://pallet</uri>-->
+<!--                <pose> 2 -9 0 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+<!--      -->
+
+
+
+<!--        forklift-->
+<!--        <model name = "forklift_1">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://forklift</uri>-->
+<!--                <pose>10 15 0 0 0 1.57 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+
+<!--        workers-->
+<!--        <model name = "workers_2">-->
+<!--            <include>-->
+<!--                <static>true</static>-->
+<!--                <uri>model://workers</uri>-->
+<!--                <pose> -2 8 0 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+
+
+<!--           conveyor1-->
+<!--        <model name = "conveyor1">-->
+<!--        <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--            <static>true</static>-->
+<!--            <uri>model://conveyor</uri>-->
+<!--            <pose> 9 -7 0 0 0 0 </pose>-->
+<!--        </include> -->
+<!--        </model>-->
+
+<!--          conveyor2-->
+<!--        <model name = "conveyor2">-->
+<!--        <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--            <static>true</static>-->
+<!--            <uri>model://conveyor</uri>-->
+<!--            <pose> 9 8 0 0 0 0 </pose>-->
+<!--        </include> -->
+<!--        </model>-->
+
+<!--        machine 1-->
+<!--        <model name = "machine_1">-->
+<!--        <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--            <static>true</static>-->
+<!--            <uri>model://machine</uri>-->
+<!--            <pose> 2 18 0 0 0 0 </pose>-->
+<!--        </include> -->
+<!--        </model>-->
+
+<!--        machine 2-->
+<!--        <model name = "machine_2">-->
+<!--        <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--            <static>true</static>-->
+<!--            <uri>model://machine</uri>-->
+<!--            <pose> 11 -23 0 0 0 0 </pose>-->
+<!--        </include> -->
+<!--        </model>-->
+<!--            -->
+<!--            green_rack population-->
+<!--    <population name = "green_rack1_population"> -->
+<!--            <model name = "g_rack1">-->
+<!--                <include>-->
+<!--                    <static>true</static>-->
+<!--                    <uri>model://green_rack</uri>-->
+<!--                </include>-->
+<!--            </model>-->
+<!--            <pose>-8.5 21 0 0 0 0 </pose>  for this pose 0 0 0 starts from the origin of gazebo-->
+<!--            <box>-->
+<!--                 <size>12 4 0.09</size>-->
+<!--            </box>-->
+<!--            <model_count>4</model_count>-->
+<!--            <distribution>-->
+<!--                <type>linear-x</type>-->
+<!--            </distribution>-->
+<!--    </population>-->
+
+<!--     green_rack population-->
+<!--    <population name = "green_rack2_population"> -->
+<!--            <model name = "g_rack2">-->
+<!--                <include>-->
+<!--                    <static>true</static>-->
+<!--                    <uri>model://green_rack</uri>-->
+<!--                </include>-->
+<!--            </model>-->
+<!--            <pose>-8.5 16 0 0 0 0 </pose>  -->
+<!--            <box>-->
+<!--                 <size>12 4 0.09</size>-->
+<!--            </box>-->
+<!--            <model_count>4</model_count>-->
+<!--            <distribution>-->
+<!--                <type>linear-x</type>-->
+<!--            </distribution>-->
+<!--    </population>-->
+
+<!--     pallet population 1-->
+<!--    <population name = "pallet1_population"> -->
+<!--            <model name = "p1">-->
+<!--                <include>-->
+<!--                    <static>true</static>-->
+<!--                    <uri>model://pallet</uri>-->
+<!--                </include>-->
+<!--            </model>-->
+<!--            <pose> -12 -22 0 0 0 0 </pose>  this pose starts from the origin of gazebo which is the centre of this model-->
+<!--            <box>-->
+<!--                 <size>6.5 8 0.09</size>-->
+<!--            </box>-->
+<!--            <model_count>4</model_count>-->
+<!--            <distribution>-->
+<!--                <type>uniform</type>-->
+<!--            </distribution>-->
+<!--    </population>-->
+
+<!--      pallet population 2-->
+<!--    <population name = "pallet2_population"> -->
+<!--            <model name = "p2">-->
+<!--                <include>-->
+<!--                    <static>true</static>-->
+<!--                    <uri>model://pallet</uri>-->
+<!--                </include>-->
+<!--            </model>-->
+<!--            <pose> -12.5 9 0 0 0 0 </pose>  this pose starts from the origin of gazebo which is the centre of this model-->
+<!--            <box>-->
+<!--                 <size>5 9 0.09</size>-->
+<!--            </box>-->
+<!--            <model_count>6</model_count>-->
+<!--            <distribution>-->
+<!--                <type>uniform</type>-->
+<!--            </distribution>-->
+<!--    </population>-->
+
+
+
+<!--    pallet population 3-->
+<!--    <population name = "pallet3_population"> -->
+<!--            <model name = "p3">-->
+<!--                <include>-->
+<!--                    <static>true</static>-->
+<!--                    <uri>model://pallet</uri>-->
+<!--                </include>-->
+<!--            </model>-->
+<!--            <pose> 0 -22 0 0 0 0 </pose>  this pose starts from the origin of gazebo which is the centre of this model-->
+<!--            <box>-->
+<!--                 <size>10 6.5 0.09</size>-->
+<!--            </box>-->
+<!--            <model_count>6</model_count>-->
+<!--            <distribution>-->
+<!--                <type>uniform</type>-->
+<!--            </distribution>-->
+<!--    </population>-->
+
+  </world>
+</sdf>

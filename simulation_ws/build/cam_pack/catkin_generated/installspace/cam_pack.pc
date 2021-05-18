@@ -1,8 +1,0 @@
-prefix=/home/kiki/simulation_ws/install
-
-Name: cam_pack
-Description: Description of cam_pack
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <!-- This Version was created due to some errors seen in the V1 that crashed GAzebo or went too slow in spawn -->
+    <!-- Load the URDF into the ROS Parameter Server -->
+    <param name="robot_description" command="$(find xacro)/xacro '$(find cam_pack)/urdf/warehouse.xacro'"/>
+
+<!--    <include file="$(find cam_pack)/launch/stereo_start.launch"/>-->
+
+    <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen"
+    args="-urdf -param robot_description -model cam"/>
+
+    <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+          <remap from="/joint_states" to="/warehouse/joint_states" />
+  </node>
+
+<!--     <node pkg="stereo_image_proc" type ="stereo_image_proc" name="" respawn="true">-->
+<!--        <remap from="/left/image_raw" to="/warehouse/camera1/image_raw"/>-->
+<!--        <remap from="/left/camera_info" to="/warehouse/camera1/camera_info"/>-->
+<!--        <remap from="/right/image_raw" to="/warehouse/camera2/image_raw"/>-->
+<!--        <remap from="/right/camera_info" to="/warehouse/camera2/camera_info"/>-->
+<!--    </node>-->
+
+</launch>

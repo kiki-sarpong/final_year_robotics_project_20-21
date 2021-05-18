@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <world name="default">
+
+        <scene>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <!-- <background>0.25 0.25 0.25 1</background> -->
+            <shadows>false</shadows>
+        </scene>
+
+        <include>  <!--Add a light source-->
+            <uri>model://sun</uri>
+        </include>
+
+        <include>  <!--Add a ground plane-->
+            <uri>model://ground_plane</uri>
+        </include>
+
+        warehouse model
+        <model name = "warehouse">
+            <include>  <!--Add custom room model-->
+                <static>true</static>
+                <uri>model://warehouse</uri>
+<!--                centering the warehouse model-->
+                <pose> 12.5 -20 -0.1 0 0 1.57 </pose>
+            </include>
+        </model>
+
+
+         box rack distribution 1
+        <population name = "box_rack_distribution_1">
+                <model name = "box_rack_setup_1">
+                    <include>
+                        <static>true</static>
+                        <uri>model://box_rack</uri>
+                    </include>
+                </model>
+                <pose> -7.5 -12 0.2 0 0 0 </pose>
+                <distribution>
+                     <type>grid</type>
+                     <rows>4</rows>
+                     <cols>3</cols>
+                     <step>4 3.5 0</step>
+                </distribution>
+        </population>
+
+        box rack distribution 2
+        <population name = "box_rack_distribution_2">
+                <model name = "box_rack_setup_2">
+                    <include>
+                        <static>true</static>
+                        <uri>model://box_rack</uri>
+                    </include>
+                </model>
+                <pose> -7.5 5 0.2 0 0 0 </pose>
+                <distribution>
+                     <type>grid</type>
+                     <rows>4</rows>
+                     <cols>3</cols>
+                     <step>4 3.5 0</step>
+                </distribution>
+        </population>
+
+
+      box rack distribution 3
+        <population name = "box_rack_distribution_3">
+                <model name = "box_rack_setup_3">
+                    <include>
+                        <static>true</static>
+                        <uri>model://box_rack</uri>
+                    </include>
+                </model>
+                <pose> 6 -12 0.2 0 0 0 </pose>
+                <distribution>
+                     <type>grid</type>
+                     <rows>4</rows>
+                     <cols>2</cols>
+                     <step>4 3.5 0</step>
+                </distribution>
+        </population>
+
+      box rack distribution 4
+        <population name = "box_rack_distribution_4">
+                <model name = "box_rack_setup_4">
+                    <include>
+                        <static>true</static>
+                        <uri>model://box_rack</uri>
+                    </include>
+                </model>
+                <pose> 6 15 0.2 0 0 0 </pose>
+                <distribution>
+                     <type>grid</type>
+                     <rows>2</rows>
+                     <cols>2</cols>
+                     <step>4 3.5 0</step>
+                </distribution>
+        </population>
+
+<!--      box rack distribution 5-->
+<!--        <population name = "box_rack_distribution_5">-->
+<!--                <model name = "box_rack_setup_5">-->
+<!--                    <include>-->
+<!--                        <static>true</static>-->
+<!--                        <uri>model://box_rack</uri>-->
+<!--                    </include>-->
+<!--                </model>-->
+<!--                <pose> 12 -34.8 0.2 0 0 0 </pose>-->
+<!--                <distribution>-->
+<!--                     <type>grid</type>-->
+<!--                     <rows>3</rows>-->
+<!--                     <cols>4</cols>-->
+<!--                     <step>4.5 4.5 0</step>-->
+<!--                </distribution>-->
+<!--        </population>-->
+
+
+<!--      box rack distribution 6-->
+<!--        <population name = "box_rack_distribution_6">-->
+<!--                <model name = "box_rack_setup6">-->
+<!--                    <include>-->
+<!--                        <static>true</static>-->
+<!--                        <uri>model://box_rack</uri>-->
+<!--                    </include>-->
+<!--                </model>-->
+<!--                <pose> -15.5 -34.8 0.2 0 0 0 </pose>-->
+<!--                <distribution>-->
+<!--                     <type>grid</type>-->
+<!--                     <rows>3</rows>-->
+<!--                     <cols>4</cols>-->
+<!--                     <step>4.5 4.5 0</step>-->
+<!--                </distribution>-->
+<!--        </population>-->
+
+<!--      box rack distribution 7-->
+<!--        <population name = "box_rack_distribution_7">-->
+<!--                <model name = "box_rack_setup7">-->
+<!--                    <include>-->
+<!--                        <static>true</static>-->
+<!--                        <uri>model://box_rack</uri>-->
+<!--                    </include>-->
+<!--                </model>-->
+<!--                <pose> 18 0 0.2 0 0 0 </pose>-->
+<!--                <distribution>-->
+<!--                     <type>grid</type>-->
+<!--                     <rows>10</rows>-->
+<!--                     <cols>2</cols>-->
+<!--                     <step>4.5 5 0</step>-->
+<!--                </distribution>-->
+<!--        </population>-->
+
+
+      box_stack 1
+        <population name = "box_stack_distribution">
+                <model name = "box_stack">
+                    <include>
+                        <static>true</static>
+                        <uri>model://box_stack</uri>
+                    </include>
+                </model>
+                <pose> 7 4 0.2 0 0 0 </pose>
+                <distribution>
+                     <type>grid</type>
+                     <rows>4</rows>
+                     <cols>1</cols>
+                     <step>4 2.5 0</step>
+                </distribution>
+        </population>
+
+      pallets 1
+        <population name = "pallet_distribution">
+                <model name = "pallets">
+                    <include>
+                        <static>true</static>
+                        <uri>model://pallet</uri>
+                    </include>
+                </model>
+                <pose> 9.5 4 0.2 0 0 0 </pose>
+                <distribution>
+                     <type>grid</type>
+                     <rows>4</rows>
+                     <cols>1</cols>
+                     <step>4 2.5 0</step>
+                </distribution>
+        </population>
+
+      box_stack 2
+        <population name = "box2_stack_distribution">
+                <model name = "box2_stack">
+                    <include>
+                        <static>true</static>
+                        <uri>model://box_stack</uri>
+                    </include>
+                </model>
+                <pose> -6 16 0.2 0 0 0 </pose>
+                <distribution>
+                     <type>grid</type>
+                     <rows>1</rows>
+                     <cols>4</cols>
+                     <step>4 2.5 0</step>
+                </distribution>
+        </population>
+
+<!--      &lt;!&ndash; april tags&ndash;&gt;-->
+
+<!--        <model name = "april_tag1">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00000</uri>-->
+<!--                <pose> 20 36.1 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--        <model name = "april_tag2">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00001</uri>-->
+<!--                <pose> 20 32 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--       <model name = "april_tag3">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00002</uri>-->
+<!--                <pose> 20 27 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--       <model name = "april_tag4">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00003</uri>-->
+<!--                <pose> 20 21 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--      <model name = "april_tag5">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00004</uri>-->
+<!--                <pose> 20 16 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+
+<!--        <model name = "april_tag6">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00005</uri>-->
+<!--                <pose> 0 36.1 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--         <model name = "april_tag7">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00006</uri>-->
+<!--                <pose> 0 32 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--        <model name = "april_tag8">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00007</uri>-->
+<!--                <pose> 0 27 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+
+<!--       <model name = "april_tag9">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00008</uri>-->
+<!--                <pose> 0 21 0.2 0 0 0</pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+
+<!--       <model name = "april_tag10">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00009</uri>-->
+<!--                <pose> 0 14 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--      <model name = "april_tag11">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00010</uri>-->
+<!--                <pose> -16 36 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--         <model name = "april_tag12">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00011</uri>-->
+<!--                <pose> -16 32 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--        <model name = "april_tag13">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00012</uri>-->
+<!--                <pose> -16 27 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--       <model name = "april_tag14">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00013</uri>-->
+<!--                <pose> -16 21 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--       <model name = "april_tag15">-->
+<!--            <include>  &lt;!&ndash;Add custom room model&ndash;&gt;-->
+<!--                <static>true</static>-->
+<!--                <uri>model://Apriltag36_11_00014</uri>-->
+<!--                <pose> -16 16 0.2 0 0 0 </pose>-->
+<!--            </include>-->
+<!--        </model>-->
+
+<!--  //////////////////////////////////////////////////-->
+
+  </world>
+</sdf>

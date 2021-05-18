@@ -1,0 +1,19 @@
+<launch>
+<!--    <include file="$(find cam_pack)/launch/warehouse_camera.launch"/>-->
+<!--    <node pkg="stereo_image_proc" type ="stereo_image_proc" name="" respawn="true">-->
+<!--        <remap from="/warehouse/camera1/image_raw" to="/my_stereo/left/image_raw"/>-->
+<!--        <remap from="/warehouse/camera1/camera_info" to="/my_stereo/left/camera_info"/>-->
+<!--        <remap from="/warehouse/camera2/image_raw" to="/my_stereo/right/image_raw"/>-->
+<!--        <remap from="/warehouse/camera2/camera_info" to="/my_stereo/right/camera_info"/>-->
+<!--    </node>-->
+
+    <node pkg="stereo_image_proc" type ="stereo_image_proc" name="" respawn="true">
+        <remap from="/my_stereo/left/image_raw" to="/warehouse/camera1/image_raw"/>
+        <remap from="/my_stereo/left/camera_info" to="/warehouse/camera1/camera_info"/>
+        <remap from="/my_stereo/right/image_raw" to="/warehouse/camera2/image_raw"/>
+        <remap from="/my_stereo/right/camera_info" to="/warehouse/camera2/camera_info"/>
+    </node>
+
+
+<!--      enter in command line to run  ROS_NAMESPACE=my_stereo rosrun stereo_image_pr stereo_image_proc-->
+</launch>
